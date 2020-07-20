@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        let Input = Number(prompt("Enter The Marks:- "));
+let grade = null;
+
+let result = (Input >= 35 && Input <= 45) ? grade = `Marks are ${Input} and grade is C` : ((Input > 45 && Input <= 55) ? grade = `Marks are ${Input} and grade is B` : ((Input > 55 && Input <= 75) ? grade = `Marks are ${Input} and grade is A` :((Input > 75 && Input <=100) ? grade = `Marks are ${Input} and grade is A+` :((Input < 35) ? grade = "Sorry!! You Are Fail,Try Better Next Time" : grade = "Invalid Marks !!")))); //Using Ternary Operator
+
+console.log(result);
+    </script>
+</head>
+<body>
+USING TERNARY OPERATOR
+</body>
+</html>

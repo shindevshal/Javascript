@@ -1,0 +1,42 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        let Input = Number(prompt("Enter The Marks:- "));
+let grade = null;
+
+switch (true) {
+    case (Input >= 35 && Input <= 45):
+        grade = `Marks are ${Input} and grade is C`;
+        break;
+    case (Input > 45 && Input <= 55):
+        grade = `Marks are ${Input} and grade is B`;
+        break;
+    case (Input > 55 && Input <= 75):
+        grade = `Marks are ${Input} and grade is A`;
+        break;
+    case (Input > 75 && Input <=100):
+        grade = `Marks are ${Input} and grade is A+`;
+        break;
+    case (Input < 35):
+        grade = "Sorry!! You Are Fail,Try Better Next Time";
+        break;
+    default:
+        grade = "Invalid Marks !!";
+        break;
+}
+
+let result = `${grade}.`;
+console.log(result);
+
+    </script>
+</head>
+<body>
+USING SWITCH
+
+</body>
+</html>
