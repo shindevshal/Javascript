@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let num = Number(prompt("Enter A Positive Number :-"));
+let arr = [];
+
+for (i=0;i<=num;i++){
+    arr.push(i);
+}
+let odd = arr.filter(items => items % 2 != 0);
+let oddCubes = odd.map(items => items * items * items);
+
+ console.log("Odd  Array = ",odd);
+console.log("Cube's of Odd Number's Array = ",oddCubes);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
